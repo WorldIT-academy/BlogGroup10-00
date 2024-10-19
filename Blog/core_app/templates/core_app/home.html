@@ -1,2 +1,10 @@
 {% extends 'base.html' %}
+{% load static %}
 
+{% block link %}
+<link rel="stylesheet" href="{% static 'core_app/styles/style.css'%}">
+{% endblock %}
+
+{% block content %}
+<h1>Головна </h1>
+{% endblock %}

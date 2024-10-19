@@ -21,7 +21,7 @@ from core_app.views import view_home
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', view_home),
+    path('', view_home, name = "home"),
     path('author/',include('author_app.urls')),
     path('post/', include('post_app.urls') )
 ]
